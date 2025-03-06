@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>JSD Landing Page</title>
+<meta charset=utf-8 />
+<meta name=viewport content='width=device-width' />
+<meta name=author content='Jonas Spence Dobias'
+
+
+<!-- Include Stylesheet -->
+<link rel='stylesheet' type='text/css' href='main.css'>
+
+<!-- Include Favicon -->
+<link rel='icon' type='image/x-icon' href='JSD Games.png'>
+
+<!-- Include jQuery core -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include jQuery UI -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- Javascript/JQuery -->
+<script>
+$(document).ready(function() {
+$('#tabs').tabs({
+active: 0
+});
+
+
+});
+
+
+
+
+</script>
+
+<!-- Page-Specific CSS -->
+<style>
+body{
+background-image: url(JSDGames.png);
+}
+.desc{
+width:300px;
+}
+.gamediv{
+border:2px;
+background-color: gray;
+width: 300px;
+}
+
+#swords{
+margin-left:10%
+}
+
+#crowntext{
+margin-left:10%
+}
+</style>
+
+</head>
+<body>
+
+<div id="tabs">
+<ul>
+<li><a href="#fragment-1">Home</a></li>
+<li><a href="#fragment-2">Games</a></li>
+<li><a href="#fragment-3">About</a></li>
+</ul>
+
+<div id="fragment-1">
+<img src='JSDGames.png' />
+<p>I'm Jonas and I made this website because coding is a hobby of mine. Some things I like include coding, gaming, and reading.</p>
+</div>
+
+
+<div id="fragment-2">
+<div class=gamediv id = getthecrown>
+<h2 id=crowntext>Get the crown</h2>
+<br>
+<img id=swords src=swords.png />
+<p class=desc >A small text-based game played with window popups where you must infiltrate the enemy castle and take back the stolen crown.</p>
+
+<button class=playbutton id=crownbutton onclick="location.href='getTheCrown.html'" >Play</button>
+</div>
+
+
+</div>
+
+<div id="fragment-3">
+<p>This is a fairly simple website I made as a little project. I hope you like it! Feel free to use any of my assets from this site.</p>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
